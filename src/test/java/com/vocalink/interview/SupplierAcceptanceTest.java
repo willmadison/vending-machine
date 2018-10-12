@@ -13,6 +13,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 @DisplayName("The vending machine should ")
 class SupplierAcceptanceTest {
+
     private static final int SHORT_RUNNING_TIMEOUT = 5000;
     private UserInteraction user;
     private SupplierInteraction supplier;
@@ -28,7 +29,6 @@ class SupplierAcceptanceTest {
     void tearDown() throws IOException {
         supplier.stopMachine();
     }
-
 
     @Test
     @DisplayName("allow the supplier to reset the machine to its initial state")
